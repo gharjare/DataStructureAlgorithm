@@ -9,7 +9,7 @@ namespace DataStructureAlgorithm
     public class LinkedList<T>
     {
         public Node head;
-        public void Add(string data)
+        public void Add(int data)
         {
             Node node = new Node(data);
             if(this.head == null)
@@ -50,11 +50,11 @@ namespace DataStructureAlgorithm
             this.head = this.head.next;
             return this.head;
         }
-        public Node Search(string data)
+        public Node Search(int value)
         {
             while(this.head != null)
             {
-                if(this.head.data == data)
+                if (this.head.data == value)
                 {
                     return this.head;
                 }
